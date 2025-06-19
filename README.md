@@ -1,0 +1,20 @@
+sudo apt update -y
+sudo apt upgrade -y
+
+# Install Node.js and npm
+sudo apt install nodejs -y
+sudo apt install npm -y
+sudo npm install -g serve pm2
+
+git clone 
+cd server
+npm i
+npm run dev
+or
+pm2 start index.js --name grocery-backend
+cd ..
+cd client
+npm i
+npm run dev -- --host 0.0.0.0
+or
+pm2 start serve-client.mjs --interpreter node --name grocery-client
