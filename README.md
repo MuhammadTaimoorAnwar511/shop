@@ -18,3 +18,5 @@ npm i
 npm run dev -- --host 0.0.0.0
 or
 pm2 start serve-client.mjs --interpreter node --name grocery-client
+edit
+client/src/pages/seller/ProductList.jsx->src={`http://localhost:5000/images/${product.image[0]}`}
